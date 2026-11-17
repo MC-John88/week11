@@ -1,0 +1,145 @@
+{
+  "dataset": "load_breast_cancer",
+  "shape": [
+    569,
+    30
+  ],
+  "classes": {
+    "0": "恶性",
+    "1": "良性"
+  },
+  "distribution": {
+    "0": 212,
+    "1": 357
+  },
+  "missing": 0,
+  "train_size": 455,
+  "test_size": 114,
+  "baseline": {
+    "accuracy": 0.9824561403508771,
+    "f1_macro": 0.9811507936507937,
+    "confusion_matrix": [
+      [
+        41,
+        1
+      ],
+      [
+        1,
+        71
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9761904761904762,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9761904761904762,
+        "support": 42.0
+      },
+      "1": {
+        "precision": 0.9861111111111112,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.9861111111111112,
+        "support": 72.0
+      },
+      "accuracy": 0.9824561403508771,
+      "macro avg": {
+        "precision": 0.9811507936507937,
+        "recall": 0.9811507936507937,
+        "f1-score": 0.9811507936507937,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9824561403508771,
+        "recall": 0.9824561403508771,
+        "f1-score": 0.9824561403508771,
+        "support": 114.0
+      }
+    }
+  },
+  "baseline_cv_accuracy": [
+    0.978021978021978,
+    0.989010989010989,
+    0.978021978021978,
+    0.989010989010989,
+    0.967032967032967
+  ],
+  "best_params": {
+    "model__C": 0.1,
+    "model__penalty": "l2",
+    "model__solver": "liblinear"
+  },
+  "best_cv_f1_macro": 0.9811302291060132,
+  "threshold_analysis": [
+    {
+      "threshold": 0.3,
+      "cv_accuracy": 0.9582417582417583,
+      "cv_f1_macro": 0.9542759521656115
+    },
+    {
+      "threshold": 0.4,
+      "cv_accuracy": 0.9692307692307692,
+      "cv_f1_macro": 0.9666310451764311
+    },
+    {
+      "threshold": 0.5,
+      "cv_accuracy": 0.9824175824175824,
+      "cv_f1_macro": 0.9811265969802555
+    },
+    {
+      "threshold": 0.6,
+      "cv_accuracy": 0.9692307692307692,
+      "cv_f1_macro": 0.96728367162462
+    },
+    {
+      "threshold": 0.7,
+      "cv_accuracy": 0.9648351648351648,
+      "cv_f1_macro": 0.9628571428571429
+    }
+  ],
+  "cv_selected_threshold": 0.5,
+  "used_threshold": 0.5,
+  "test": {
+    "accuracy": 0.9824561403508771,
+    "f1_macro": 0.9811507936507937,
+    "confusion_matrix": [
+      [
+        41,
+        1
+      ],
+      [
+        1,
+        71
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9761904761904762,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9761904761904762,
+        "support": 42.0
+      },
+      "1": {
+        "precision": 0.9861111111111112,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.9861111111111112,
+        "support": 72.0
+      },
+      "accuracy": 0.9824561403508771,
+      "macro avg": {
+        "precision": 0.9811507936507937,
+        "recall": 0.9811507936507937,
+        "f1-score": 0.9811507936507937,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9824561403508771,
+        "recall": 0.9824561403508771,
+        "f1-score": 0.9824561403508771,
+        "support": 114.0
+      }
+    }
+  },
+  "malignant_auc": 0.996031746031746,
+  "standardized_intercept": 0.306832388000837,
+  "original_intercept": 20.71701458888227
+}

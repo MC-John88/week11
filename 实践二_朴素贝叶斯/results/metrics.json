@@ -1,0 +1,203 @@
+{
+  "dataset": "西瓜数据集3.0",
+  "shape": [
+    17,
+    8
+  ],
+  "main_features": [
+    "密度",
+    "含糖率"
+  ],
+  "distribution": {
+    "0": 9,
+    "1": 8
+  },
+  "missing": 0,
+  "label_mapping": {
+    "0": "坏瓜",
+    "1": "好瓜"
+  },
+  "train_size": 11,
+  "test_size": 6,
+  "test": {
+    "accuracy": 0.5,
+    "f1_macro": 0.4857142857142857,
+    "confusion_matrix": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.5714285714285714,
+        "support": 3.0
+      },
+      "1": {
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.4,
+        "support": 3.0
+      },
+      "accuracy": 0.5,
+      "macro avg": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.4857142857142857,
+        "support": 6.0
+      },
+      "weighted avg": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.48571428571428577,
+        "support": 6.0
+      }
+    }
+  },
+  "parameters": {
+    "classes": [
+      0,
+      1
+    ],
+    "theta_": [
+      [
+        0.5205,
+        0.12633333333333333
+      ],
+      [
+        0.6076,
+        0.3212
+      ]
+    ],
+    "var_": [
+      [
+        0.03956125003075117,
+        0.006439222252973395
+      ],
+      [
+        0.01604104003075117,
+        0.008129360030751175
+      ]
+    ],
+    "class_prior_": [
+      0.5454545454545454,
+      0.45454545454545453
+    ],
+    "epsilon_": 3.0751173553719015e-11
+  },
+  "测1": {
+    "features": [
+      0.697,
+      0.46
+    ],
+    "prediction": 1,
+    "probabilities": [
+      0.0004275097407824375,
+      0.9995724902592176
+    ],
+    "in_training": true,
+    "manual_posterior": [
+      0.0004275097407824378,
+      0.9995724902592175
+    ]
+  },
+  "full_dataset_cv": {
+    "LeaveOneOut": {
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "mean": 0.6470588235294118,
+      "fold_variance": 0.22837370242214533,
+      "fold_std": 0.47788461203740945
+    },
+    "StratifiedKFold5": {
+      "scores": [
+        1.0,
+        0.5,
+        0.6666666666666666,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "mean": 0.6333333333333333,
+      "fold_variance": 0.0488888888888889,
+      "fold_std": 0.22110831935702668
+    }
+  },
+  "train_cv_preferred_setting": {
+    "priors": "empirical",
+    "var_smoothing": 1e-12,
+    "train_cv_accuracy": 0.5277777777777778,
+    "test_accuracy": 0.5,
+    "test_p_good": [
+      0.8269208080309769,
+      0.9539545251546807,
+      0.009850699500144004,
+      0.23398798845087496,
+      0.10800467092692391,
+      0.29799269551643814
+    ]
+  },
+  "categorical_extension": {
+    "accuracy": 0.5,
+    "f1_macro": 0.4857142857142857,
+    "confusion_matrix": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.4,
+        "support": 3.0
+      },
+      "1": {
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.5714285714285714,
+        "support": 3.0
+      },
+      "accuracy": 0.5,
+      "macro avg": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.4857142857142857,
+        "support": 6.0
+      },
+      "weighted avg": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.48571428571428577,
+        "support": 6.0
+      }
+    }
+  }
+}

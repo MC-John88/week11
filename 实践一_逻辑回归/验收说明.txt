@@ -1,0 +1,4 @@
+入口 main.py；环境 requirements.txt 与锁定版本 requirements-lock.txt；用法 README.md。
+结果及图表 results；双击 results/实验报告.html 可阅读包含图表的完整报告。
+测试已运行，记录见 test_results.txt。
+本地Git已初始化并提交；未提供远程仓库地址，因此云端同步需由用户配置后执行。
